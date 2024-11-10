@@ -4,11 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh'''
                 echo 'Hello World'
-                ls -lrt
-                cat Jenkinsfile
-                '''
             }
         }
     }
