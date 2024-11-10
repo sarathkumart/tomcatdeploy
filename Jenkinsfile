@@ -2,9 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Run Shell Commands') {
             steps {
-                sh' echo "Hello World"'
+                // Run pwd command
+                sh 'pwd'
+
+                // Run ls command
                 sh 'ls'
             }
         }
